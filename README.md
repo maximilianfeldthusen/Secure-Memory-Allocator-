@@ -1,8 +1,8 @@
 
 
 
-##```markdown
-# Secure Alloc -- A Thread‑Safe Secure Memory Allocator
+
+## Secure Alloc -- A Thread‑Safe Secure Memory Allocator
 
 **License:** GPL‑v3  
 **Author:** Maximilian Feldthusen  
