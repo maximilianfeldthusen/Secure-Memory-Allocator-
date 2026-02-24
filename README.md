@@ -34,7 +34,7 @@ cd repo
 make    # builds libsecurealloc.a
 make test    # runs unit tests
 sudo make install    # copies lib and header to /usr/local
-````
+```
 
 ### Build & Install (Windows -- MinGW)
 
