@@ -1,6 +1,5 @@
 
 
-Here's the text converted to GitHub-flavored Markdown:
 
 ````markdown
 # Secure Alloc -- A Thread‑Safe Secure Memory Allocator
