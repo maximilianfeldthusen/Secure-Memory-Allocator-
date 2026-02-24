@@ -1,7 +1,7 @@
 
 
 
-````markdown
+```markdown
 # Secure Alloc -- A Thread‑Safe Secure Memory Allocator
 
 **License:** GPL‑v3  
