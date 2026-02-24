@@ -31,7 +31,7 @@ Prerequisites
 
 Build & Install (POSIX)
 
-\`\`\`bash git clone https://github.com/your/repo.git cd repo make \#
+bash git clone https://github.com/your/repo.git cd repo make \#
 builds libsecurealloc.a make test \# runs unit tests sudo make install
 \# copies lib and header to /usr/local Build & Install (Windows --
 MinGW) git clone https://github.com/your/repo.git cd repo mingw32-make
