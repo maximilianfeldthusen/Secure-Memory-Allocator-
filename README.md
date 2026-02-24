@@ -150,5 +150,3 @@ Please open an issue on the [SourceForge tracker](https://sourceforge.net/p/your
 
 ```
 
-This markdown format follows GitHub's conventions for headings, code blocks, tables, and list formatting, and ensures readability on GitHub's platform.
-```
