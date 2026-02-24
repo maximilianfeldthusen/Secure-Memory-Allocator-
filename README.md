@@ -29,40 +29,6 @@ Prerequisites
                               Studio command prompt
   -----------------------------------------------------------------------
 
-Build & Install (POSIX)
-
-bash git clone https://github.com/your/repo.git cd repo make \#
-builds libsecurealloc.a make test \# runs unit tests sudo make install
-\# copies lib and header to /usr/local Build & Install (Windows --
-MinGW) git clone https://github.com/your/repo.git cd repo mingw32-make
-\# builds securealloc.lib mingw32-make test \# runs tests mingw32-make
-install DESTDIR=C:`\Program `{=tex}Files`\SecureAlloc`{=tex} Project
-directory tree
-
-secure‑alloc/ │ ├─ src/ \# Source files for the library │ ├─
-secure_alloc.c │ └─ secure_alloc.h │ ├─ test/ \# Unit‑test harness │ ├─
-tests.c │ ├─ unity.c \# Unity framework source (downloaded once) │ └─
-unity.h │ ├─ docs/ \# Human‑readable documentation │ ├─ README.md │ └─
-LICENSE \# GPL‑v3 text (or a copy‑link to it) │ ├─ Makefile \# Build
-script (POSIX + MinGW) └─ .gitignore \# (optional) ignore object files,
-binaries, etc.
-
-Explanation of each item Path What it contains Why it matters
-src/secure_alloc.c Implementation of the allocator (platform‑specific
-page handling, guard pages, secure wipe, mutex/critical‑section). Core
-library code. src/secure_alloc.h Public API (sa_init, sa_malloc, ...).
-Header that client programs include. test/tests.c Small test suite built
-on the Unity framework. Verifies correctness and security properties.
-test/unity.{c,h} Single‑header test framework (download from
-https://github.com/ThrowTheSwitch/Unity). No external dependencies for
-testing. docs/README.md Overview, build instructions, usage examples.
-First place a newcomer looks. docs/LICENSE GPL‑v3 license text. Required
-for open‑source distribution. Makefile Handles compilation of the static
-library (libsecurealloc.a or securealloc.lib), the test binary, and
-install/uninstall targets. One‑stop build system for both POSIX and
-Windows (MinGW). .gitignore (optional) excludes *.o, test, lib*.a, etc.
-from version control. Keeps the repository tidy.
-
 Using the allocator in your own code Include the header #include
 "secure_alloc.h" If you installed the library system‑wide, the header
 will be found in /usr/local/include. Otherwise, add the relative path:
