@@ -104,6 +104,3 @@ volatile write loop) and releases the mapping, including the guard page.
 sa_shutdown() Destroys the global lock and frees any remaining internal
 state. After this call you must not use the allocator unless you call
 sa_init() again.
-
-License GPL‑v3 -- see the LICENSE file. Contact / Issues Please open an
-issue on the SourceForge tracker.
