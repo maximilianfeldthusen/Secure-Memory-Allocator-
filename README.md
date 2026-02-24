@@ -144,9 +144,5 @@ int main(void) {
 
 GPL‑v3 -- see the [LICENSE](docs/LICENSE) file.
 
-## Contact / Issues
-
-Please open an issue on the [SourceForge tracker](https://sourceforge.net/p/your-project/issues).
-
 ```
 
