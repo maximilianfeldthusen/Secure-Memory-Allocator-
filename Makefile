@@ -81,5 +81,7 @@ Building on Windows (MinGW/MSYS)
 > mingw32-make         # produces securealloc.lib
 > .\test.exe           # run the test binary
 > mingw32-make install DESTDIR=C:\Program Files\SecureAlloc
-If you use Visual Studio instead of MinGW, replace the CC, AR, and flags with cl/link equivalents – the source files are pure C and require only kernel32.lib for the Windows APIs.
+If you use Visual Studio instead of MinGW, replace the CC, AR, 
+and flags with cl/link equivalents – 
+the source files are pure C and require only kernel32.lib for the Windows APIs.
 
